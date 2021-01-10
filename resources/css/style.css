@@ -1,0 +1,548 @@
+/* Start set up */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 1.7em;
+    background-color: #fff;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1,h2,h3{
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 300;
+
+}
+
+p{
+    margin: 10px 0;
+}
+
+.clearfix{zoom:1}
+.clearfix:after{
+    content: '.';
+    clear:both;
+    display:block;
+     height: 0;
+    visibility: hidden;
+}
+
+.clr {
+    clear: both;
+  }
+/* Utility Class */
+.row {
+   
+    max-width: 1140px;/*The max-width property defines the maximum width of an element.
+                        If the content is larger than the maximum width, it will automatically change the height of the element.
+                        If the content is smaller than the maximum width, the max-width property has no effect.*/
+    margin: 0 auto; /* it means top and bottom=0; left and right=auto */
+    padding: 0 19px;
+}
+
+.box{
+    padding: 1%;
+}
+
+.container{
+    margin: auto;
+    max-width: 1100px;
+    overflow: auto;
+    padding:0 20px
+}
+
+h1{
+    font-size:50px;
+}
+
+h2{
+    font-size:30px;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+}
+
+h2:after{
+    display: block;
+    height: 2px;
+    background-color:#e67e22 ;
+    content: " ";
+    width: 100px;
+    margin:0 auto;
+    margin-top:30px;
+    
+}
+
+h3{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+/* Button */
+.btn{
+    color: #000;
+    display: inline-block;
+    font-size: 15px;
+    padding: 0 10px;
+    text-align: center;
+    border-radius:5px;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s, border 0.2s;
+}
+.btn:hover{
+    background-color: #cf6d17;
+    color: #fff;
+} 
+
+.btn-full{
+    background: #cf6d17 ;
+    color: #000;
+}
+
+.btn-full:hover{
+    border:1px solid #e67e22;
+}
+
+.btn-ghost{
+    border:2px solid #e67e22;
+    color: #e67e22;;
+}
+
+.btn-ghost:hover{
+    border:2px solid #e67e22;
+    color: #fff;
+}
+
+.btn-light{
+    background-color: #e67e22;
+    border:1px solid #e67e22;
+}
+
+.btn-light :hover{
+    border:1px solid #e67e22;
+}
+
+
+/* padding y-axis */
+.py-1{padding: 10px 0;}
+.py-2{padding: 20px 0;}
+.py-3{padding: 30px 0;}
+
+/* Paragraph */
+.long-text{
+    padding: 0 50px;
+    line-height: 1.2em;
+    color: rgb(104, 101, 101);
+}
+
+.short-text{
+    font-weight: 300;
+    color: rgb(104, 101, 101) ;
+}
+
+/* LEAD-word */
+
+.lead1,.lead2{
+    color:#e67e22 ;
+}
+
+.lead1{
+    font-weight: 300;
+    font-size: 200%;
+}
+
+.lead3{color: #fff;}
+
+/* navbar style */
+    
+    #navbar{
+        background-color:rgb(136, 131, 131);
+        overflow: auto;
+        padding: 0;
+    }
+    
+    #navbar h1 a {
+    color: rgb(247, 238, 239);
+    }
+
+    #navbar h1 {
+        float: left;
+        padding-top: 20px;
+        margin: 0 30px;
+
+    } 
+
+    #navbar ul{
+        list-style: none;
+        float: right;
+    }
+
+    #navbar ul li{
+        float:left;
+    }
+
+    #navbar ul li a:link,
+    #navbar ul li a:visited{
+        display: block;
+        padding: 5px;
+        text-align: center;
+        color:rgba(245, 245, 239, 0.658);
+        border: none;
+        margin: 5px 20px;
+        font-size: 20px;
+        transition: border-bottom 0.2s,color 0.2s;
+    }
+
+    #navbar ul li a:hover,
+    #navbar ul li a:active,
+    #navbar ul li a.current {
+        color: #e48d1b;
+        border-bottom: 2px solid rgb(231, 151, 46);
+
+    }
+    
+    #navbar .logo{
+        font-size:150%;
+        padding:15px 0 ;
+    }
+
+    #navbar .logo-text{
+        color: #fff;
+    }
+
+    #navbar .text-primary{
+        color: #e28c40;
+    }
+
+/*show-case  */
+
+#show-case{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(/resources/img/pic1.jpg);
+    background-size:cover;
+    background-position:center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+.main-text{
+    color:#fff;
+    padding-top: 160px;
+    text-align: center;
+    
+}
+
+.text-content h1,p{
+    word-spacing: 2px;
+}
+
+.text-content h1{
+    font-size: 25px;
+}
+
+.text-content p{
+    font-size: 20px ;
+    margin-bottom: 20px;
+}
+
+
+
+/* Section about restaurant */
+.info-chef{
+    background-color:rgb(136, 131, 131);
+    color: rgb(53, 51, 51);
+    height: 650px;
+}
+
+.info-lead{
+color: rgb(236, 125, 33);
+font-size: 140%;
+font-weight: 200;
+}
+
+.info-img{
+    float:left;
+    width:50%;
+    background: url("/resources/img/chef.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 650px; 
+}
+
+.info-content{
+    float: right;
+    width: 50%;
+    text-align: center;
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+
+.info-content p{
+    margin-bottom: 20px;
+    line-height: 1.2em;
+    word-spacing: 2px;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.699);
+}
+
+
+/* Icon */
+.big-icon{
+    font-size:250%;
+    display: block;
+    margin-bottom: 10px;
+    color: #e67e22;
+}
+
+.icon-small{
+    display: inline-block;
+    color: #e67e22;
+    width: 30px;
+    text-align: center;
+    font-size: 120%;
+    margin-right: 10px;
+
+      /*secrect to algin text*/
+      line-height: 120%;
+      vertical-align:middle;
+      margin-top: -5px;
+}
+
+/* Section-steps */
+.section-steps{
+    background: rgba(250, 249, 249, 0.877);
+}
+
+/* Section-about */
+.section-about{
+ background-color: rgb(230, 231, 225);
+}
+
+.info-left{
+    float: left;
+    width: 50%;
+    min-height: 100%;
+}
+
+.info-right{
+    float: right;
+    width:50%;
+    min-height: 100%;
+}
+
+.info-right img{
+    display: block;
+    margin: auto;
+    width: 70%;
+    border-radius: 50%;
+}
+
+/* Meals Show Case */
+.section-meal{
+    padding: 0;
+}
+.meals-showcase{
+    list-style: none;
+    width: 100%;
+}
+
+.meals-showcase li{
+    display: block;
+    float:left;
+    width: 25%;
+}
+
+.meal-photo{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: rgb(22, 22, 22);
+}
+
+.meal-photo img{
+    opacity: 0.70;
+    width: 100%;
+    height:auto;
+    transform: scale(1.15);
+    transition: transform 0.5s opacity 0.5s;
+  
+}
+
+.meal-photo img:hover {
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+/* Sign Up Plans */
+.sectionp-plans{
+    background-color: #f4f4f4;
+}
+
+.plan-box{
+    background-color: #fff; 
+    border-radius: 5px;
+    width: 90%;
+    margin: 0 0 5% 5%;
+    box-shadow:0 2px 10px #b9b4b4;
+}
+
+.plan-box div{
+    padding: 15px;
+    border-bottom: 1px solid #efefef;
+}
+
+    /* Info-plan  */
+.plan-box div:first-child{
+    background-color: #fcfcfc;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+}
+
+    /* Submit button */
+.plan-box div:last-child{
+   text-align: center;
+   border: 0;
+   
+}
+
+.plan-price{
+    font-size: 300%;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #e67e22;
+}
+
+.plan-price span{
+    font-size: 40%;
+    font-weight: 300;
+}
+
+.plan-price-deal{
+    font-size: 90%;
+}
+
+.plan-box ul{
+    list-style: none;
+    padding: 0 5px;
+}
+
+.plan-box ul li{
+    padding:5px 0;
+}
+
+
+
+/* Customer feedback */
+.customer-feedback{
+    background-image:url(/resources/img/test-bg.jpg);
+    background-size:cover;
+    background-position:center;
+    height:650px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+blockquote{
+    background-color: rgb(241, 167, 55);
+    border-radius: 5px;
+    padding: 2%;
+    font-style: italic;
+    position: relative;
+    padding-top: 40px;
+    margin-top: 40px;
+    opacity: 0.9;
+}
+
+blockquote:before{
+    content: "\201C";
+    font-size:500%;
+    display:block;
+    position: absolute;
+    left:-2px;
+    top:30px
+}
+   /* ------change size of img */
+cite{
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+    font-style: italic;
+}
+cite img{
+    border: 0;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* Cities */
+.section-cities{
+    height: 650px;
+}
+
+.box img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.city-features{
+    margin-bottom: 5px;
+}
+
+/* Contact Form */
+.section-form{
+    height :550px;
+}
+.contact-form{
+    width: 60%;
+    margin: 0 auto;
+    background-color: #e28c40; /* shift+Alt+A for comment delete this */
+    border: none;
+    display: block;
+    border-radius: 10px;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea{
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #b9b3b3;
+}
+
+textarea{
+    height: 100px;
+}
+
+input[type=checkbox]{
+    margin:  10px 5px 10px 0;
+}
+
+*:focus{outline: none;}
+
+
+/* Footer */
+.main-footer{
+    background-color:rgb(136, 131, 131);
+    text-align: center;
+    padding: 20px;
+}
+
